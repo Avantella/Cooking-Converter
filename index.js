@@ -1,9 +1,7 @@
-const userInputForm = document.getElementById("user-input");
+const userInputForm = document.getElementById("form-input");
 userInputForm.addEventListener("submit", userPressedSubmit);
+const conversionResultNumber = document.getElementById("conversionResult");
 
-/**
- * @param {SubmitEvent} submitEvent
- */
 function userPressedSubmit (submitEvent) {
     submitEvent.preventDefault(); 
     const formElement = submitEvent.target; 
@@ -19,6 +17,10 @@ function userPressedSubmit (submitEvent) {
         resultNumber = userInputNumber / 2.365882365; 
     }   else if (fromUnit === "" && toUnit === "") {
         alert("Error: Make sure you filled out the form correctly!");
+    }  else if (fromUnit === "desiliter" && toUnit === "desiliter") {
+        alert("Error: Make sure you filled out the form correctly!");
+    } else if (fromUnit === "cups" && toUnit === "cups") {
+        alert("Error: Make sure you filled out the form correctly!");
     } 
     
     else {
@@ -29,8 +31,6 @@ function userPressedSubmit (submitEvent) {
     displayConversionResult(resultNumber);
 
 }
-
-const conversionResultNumber = document.getElementById("conversionResult");
 
 function displayConversionResult(resultNumber) {
     let conversionResult = resultNumber;

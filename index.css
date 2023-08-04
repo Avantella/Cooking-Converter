@@ -6,8 +6,8 @@ body {
  
 }
 
-#user-input {
-    background-color: rgba(255, 255, 255, 0.8);
+#form-input {
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 1em;
 }
 
@@ -63,6 +63,11 @@ button {
     padding: 0.4em 1em;
     background-color: rgb(128, 170, 146);
     border-radius: 0.3em;
+}
+
+button:hover {
+    cursor: pointer; 
+    background-color: rgb(86, 162, 110); 
 }
 
 #conversionResult {
