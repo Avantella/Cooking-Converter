@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cooking Converter</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-
-<section>
-
-    <h1>Cooking Converter</h1>
-
-    <form id="form-input">
-        <h2>Convert</h2>
-         <input type="number" name="userInputNumber" id="userMeasurement" placeholder="Your measurement"/>
-             
-        <h2>From </h2>
-        <div class="radioLabels">
-        <input type="radio" id="fromCups" name="fromUnit" value="cups" />
-        <label for="fromCups">Cups</label>
-
-        <input type="radio" id="fromDesiliter" name="fromUnit" value="desiliter" />
-        <label for="fromDesiliter">Desiliter</label>
-        </div> 
- 
-
-        <h2>To</h2>
-
-        <div class="radioLabels">
-        <input type="radio" id="toCups" name="toUnit" value="cups" />
-        <label for="toCups">Cups</label>
-
-        <input type="radio" id="toDesiliter" name="toUnit" value="desiliter" />
-        <label for="toDesiliter">Desiliter</label>
-        </div>
-
-        <div id="convert-button">
-        <button type="submit">Convert</button>
-        </div>
-
-        <h2>Result</h2>
-        <div id="conversionResult" class="resultNumber">0</div>
-        
-        <div id="background-image"></div>
-
-    </form>
-
-</section>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section>
+      <div id="contents">
+        <h1>Cooking Converter</h1>      
+        <form id="form-input">           
+          <h2>Convert</h2>
+          <input
+            type="number"
+            name="userInputNumber"
+            id="userMeasurement"
+            placeholder="Your measurement"
+          />
+          <h2>From</h2>
+          <div class="radioLabels">
+            <input type="radio" id="fromCups" name="fromUnit" value="cups" />
+            <label for="fromCups">Cups</label>
+            <input
+              type="radio"
+              id="fromDesiliter"
+              name="fromUnit"
+              value="desiliter"
+            />
+            <label for="fromDesiliter">Desiliter</label>
+          </div>
+          <h2>To</h2>
+          <div class="radioLabels">
+            <input type="radio" id="toCups" name="toUnit" value="cups" />
+            <label for="toCups">Cups</label>
+            <input
+              type="radio"
+              id="toDesiliter"
+              name="toUnit"
+              value="desiliter"
+            />
+            <label for="toDesiliter">Desiliter</label>
+          </div>
+          <div id="convert-button">
+            <button type="submit">Convert</button>
+          </div>
+          <h2>Result</h2>
+          <div id="conversionResult" class="resultNumber">0</div>
+          <div id="background-image"></div>
+        </form>
+      </div>
+    </section>
 
     <script defer src="index.js"></script>
-</body>
+  </body>
 </html>
