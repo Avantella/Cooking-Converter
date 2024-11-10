@@ -21,7 +21,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
     padding: 2em 2em 2em 2em;
     background-image: url(images/cooking.jpg);
@@ -35,7 +35,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin: 1vh 0 1vh 0;
+    margin: 5vh 0 1vh 0;
 }
 
 #form-input {
